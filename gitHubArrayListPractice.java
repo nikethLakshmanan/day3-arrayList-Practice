@@ -6,17 +6,17 @@ public class gitHubArrayListPractice{
 		System.out.println(constructInt(convertToArrayList(a)));
 
 	}
-		public static ArrayList<Integer> convertToArrayList(int a){
-			ArrayList<Integer> list = new ArrayList<>();
-			while(a>0){
-				list.add(a%10);
-				a/=10;
-			}
-			ArrayList<Integer> list2 = new ArrayList<>();
-			for(int i=list.size()-1; i>-1; i--){
-				list2.add(list.get(i));
-			}
-			return list2;
+	public static ArrayList<Integer> convertToArrayList(int a){
+		ArrayList<Integer> list = new ArrayList<>();
+		while(a>0){
+			list.add(a%10);
+			a/=10;
+		}
+		ArrayList<Integer> list2 = new ArrayList<>();
+		for(int i=list.size()-1; i>-1; i--){
+			list2.add(list.get(i));
+		}
+		return list2;
 	}
 
 	public static int constructInt(ArrayList<Integer> list){
