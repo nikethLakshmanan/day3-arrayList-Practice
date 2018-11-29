@@ -12,7 +12,7 @@ public class gitHubArrayListPractice{
 				a/=10;
 			}
 			ArrayList<Integer> list2 = new ArrayList<>();
-			for(int i=list.size()-1; i<-1; i--){
+			for(int i=list.size()-1; i>-1; i--){
 				list2.add(list.get(i));
 			}
 			return list2;
